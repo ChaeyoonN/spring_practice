@@ -8,7 +8,7 @@ import lombok.Setter;
 @Setter
 public class AsianRestaurant implements Restaurant {
 	
-	@Autowired //생선자 없이 필드에 바로 주입 가능
+	@Autowired //생성자 없이 필드에 바로 주입 가능
 	@Qualifier("asianChef")
 	private Chef chef;
 	
